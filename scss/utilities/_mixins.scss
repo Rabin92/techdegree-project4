@@ -1,0 +1,46 @@
+
+// Map Functions: Buttons background color
+
+    $buttons: (
+            'default': $primary-malibu,
+            'error'  : #e4757a,
+            'info'   : #927bc1,
+            'success': #63cc82,
+            'warning': #fd7856,
+    );
+
+// Mixin: Buttons background color
+
+    @mixin btn($map){
+        @each $button, $color in $map {
+            &.#{$button} {
+                background-color: $color;
+            }
+        }
+    };
+
+// Mixin: Flexbox
+
+    @mixin flexy
+           ($dsp           : flex, 
+            $fdir          : null,
+            $jcontent      : null,
+            $align         : null) {
+
+            display        : $dsp;
+            flex-direction : $fdir;
+            justify-content: $jcontent;
+            align-items    : $align;
+    };
+
+    // Mixin: Centered
+
+    @mixin centered
+           ($m-width : null,
+            $dsp     : block,
+            $margin  : 0 auto) {
+            
+            max-width: $m-width;
+            display  : $dsp;
+            margin   : $margin;
+    };

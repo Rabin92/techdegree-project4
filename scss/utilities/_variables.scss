@@ -1,0 +1,40 @@
+
+// Descriptive color variables
+
+$white         : #fff;
+$boulder       : #777;
+$silver        : #cccc;
+$primary-viking: #58e1c1;
+$primary-malibu: #51ddfc;
+
+// Font stacks
+
+$stack-sans-serif: 'Lato', sans-serif;
+$weight          : 300;
+
+// Border radius
+
+$bradius: 5px;
+
+// Grid theme background color: Maps
+
+$themes: (
+    'col-1' : #927bc1,
+    'col-2' : #fd7856,
+    'col-3' : #deb2ee,
+    'col-4' : #7ee6fd,
+    'col-5' : #88d9a0,
+    'col-6' : #4da2bb,
+    'col-7' : #ec9fa3,
+    'col-8' : #fd9f85,
+    'col-9' : #e4757a,
+    'col-10': #63cc82,
+    'col-11': $primary-malibu,
+    'col-12': #80e8d1,
+);
+
+// Media query breakpoint
+
+$break-m: '(min-width: 768px)';
+
+

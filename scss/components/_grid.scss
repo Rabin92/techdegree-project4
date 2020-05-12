@@ -1,0 +1,81 @@
+
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+
+    .container {
+        padding: 0 10px;
+
+// Media query breakpoint
+
+    @media #{$break-m} {
+      @include centered
+               ($m-width: 1400px);
+    }
+}
+
+    .centered {
+      @media #{$break-m} {
+        @include centered();
+      }
+}
+  
+    .row {
+      @include flexy
+              ($fdir: column);
+                      
+      padding: 1em 10px;
+
+// Media query breakpoint
+
+    @media #{$break-m} {
+      @include flexy
+               ($dsp : null,
+                $fdir: row);
+    }
+}
+  
+    [class^=col] {
+      flex-basis   : 100%;
+      margin-top   : 10px;
+      min-height   : 25px;
+      padding      : 10px;
+      border-radius: $bradius;
+}
+
+// Media query breakpoint
+
+    @media #{$break-m} {
+      [class^=col] {
+        @include flexy
+                ($dsp     : flex,
+                 $jcontent: center,
+                 $align   : center);
+
+        margin-top: 0;
+
+        + [class^=col] {
+          margin-left: 10px;
+        }
+      }
+
+  
+  // For directive loop
+  
+      @for $i from 1 through 12 {
+        .col-#{$i} {
+          flex-basis: ($i * 8.33%);
+        }
+      }
+}
+
+// Each directive loop
+
+      @each $theme, $colors in $themes {
+        .theme.#{$theme} {
+          background-color: $colors;
+        }
+}
+      .card {
+        flex-basis: 100%;
+}
