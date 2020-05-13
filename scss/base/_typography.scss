@@ -1,53 +1,50 @@
-
 /* ============================================= */
 /*              Base styles                      */
 /* ============================================= */
 
 * {
-    font-family: $stack-sans-serif;
-    color     : $boulder;
-    box-sizing: border-box;
-  }
-  
-  p {
-    line-height: 1.45em;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  
-  /* ============================================= */
-  /*              Typography                       */
-  /* ============================================= */
-  
-  .headline-primary {
-    color      : $primary-viking;
-    margin-left: 10px;
-  }
-  
-  .headline-secondary {
-    font-weight: $weight;
-    color      : $boulder;
-  }
-  
-  .link {
-    color      : $primary-malibu;
-    font-weight: 700;
-    &:hover {
-      color    : darken($primary-malibu, 15%);
-    }
-    // darken function to decrease the lightness by the amount specified.
+  font-family: $stack-sans-serif;
+  color: $boulder;
+  box-sizing: border-box;
+}
 
+p {
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ============================================= */
+/*              Typography                       */
+/* ============================================= */
+
+.headline-primary {
+  color: $primary-viking;
+  margin-left: 10px;
+}
+
+.headline-secondary {
+  font-weight: $weight;
+  color: $boulder;
+}
+
+.link {
+  color: $primary-malibu;
+  font-weight: 700;
+  &:hover {
+    color: darken($primary-malibu, 15%);
   }
-  
-  .blockquote {
-    font-size    : 1.5em;
-    font-weight  : $weight;
-    font-style   : italic;
-    margin-left  : 20px;
-    padding-left : 20px;
-    border-left  : 8px solid $primary-viking;
-    border-radius: 5px;
-  }
+  // darken function to decrease the lightness by the amount specified.
+}
+
+.blockquote {
+  font-size: 1.5em;
+  font-weight: $weight;
+  font-style: italic;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 8px solid $primary-viking;
+  border-radius: 5px;
+}

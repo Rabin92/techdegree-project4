@@ -1,44 +1,36 @@
-
 /* ============================================= */
 /*              Navigation                       */
 /* ============================================= */
 
-  .nav {
-      @include flexy
-               ($fdir: column);
+.nav {
+  @include flexy($fdir: column);
 
-      flex-basis  : 100%;
-      padding-left: 0;
+  flex-basis: 100%;
+  padding-left: 0;
 
-// Nested selector stored locally inside a parent selector
+  // Nested selector stored locally inside a parent selector
 
-      &-link {
-        text-align   : center;
-        border-radius: $bradius;
-        padding      : 10px 0;
-        display      : block;
-        width        : 100%;
+  &-link {
+    text-align: center;
+    border-radius: $bradius;
+    padding: 10px 0;
+    display: block;
+    width: 100%;
 
-        transition   : background-color .2s ease-in-out, color .2s ease-in-out;
-                    // transition-property, duration, timing-function
-      }
-      &-link:hover {
-        color           : $white;
-        background-color: $primary-viking;
-      }
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    // transition-property, duration, timing-function
+  }
+  &-link:hover {
+    color: $white;
+    background-color: $primary-viking;
+  }
 
-// Media query breakpoint
-    
-      @media #{$break-m} {
-        @include flexy
-                ($dsp     : null,
-                 $fdir    : row,
-                 $jcontent: flex-end,
-                 $align   : center);
-        &-link {
-        flex-basis: 100px;
-        }
-      }
+  // Media query breakpoint
+
+  @media #{$break-m} {
+    @include flexy($dsp: null, $fdir: row, $jcontent: flex-end, $align: center);
+    &-link {
+      flex-basis: 100px;
+    }
+  }
 }
-  
-

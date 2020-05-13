@@ -1,48 +1,38 @@
-
 /* ============================================= */
 /*              Buttons                          */
 /* ============================================= */
 
 .btn {
-    @include btn
-             ($buttons);
+  @include btn($buttons);
 
-    margin-top    : 15px;
-    width         : 100%;
-    color         : $white;
-    border        : none;
-    padding       : 10px 0;
-    text-transform: uppercase;
-    border-radius : $bradius;
+  margin-top: 15px;
+  width: 100%;
+  color: $white;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: $bradius;
 
-    transition: background-color 0.5s, transform .2s;
-    transition-timing-function: cubic-bezier(1, -0.04, 0.02, 1.11);
+  transition: background-color 0.5s, transform 0.2s;
+  transition-timing-function: cubic-bezier(1, -0.04, 0.02, 1.11);
 
-// @each: loop function
-    
-    @each $button, $color in $buttons {
-      &.#{$button}:hover {
-        background-color: lighten($color, 15%);
-        // lighten function to increase the lightness by the amount specified.
-        transform : translateY(2px);
-      }
+  // @each: loop function
+
+  @each $button, $color in $buttons {
+    &.#{$button}:hover {
+      background-color: lighten($color, 15%);
+      // lighten function to increase the lightness by the amount specified.
+      transform: translateY(2px);
     }
+  }
 
-// Media query breakpoints
+  // Media query breakpoints
 
-    @media #{$break-m} {
-      padding: 10px 30px;
-    
-      + .btn {
+  @media #{$break-m} {
+    padding: 10px 30px;
+
+    + .btn {
       margin-left: 10px;
     }
   }
 }
-
-
-  
-  
-
-
-
-
