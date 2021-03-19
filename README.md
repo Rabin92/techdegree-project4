@@ -1,18 +1,46 @@
 # Web Style Guide
 
+## Table of contents
+
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Tools used](#tools-used)
+  - [Project Description](#project-description)
+- [Author](#author)
+
+## Overview
+
+### Screenshot
+
+![](./images/screenshot.png)
+
+### Links
+
+- Solution URL: [View Code](https://github.com/Rabin92/techdegree-project4/tree/gh-pages)
+- Live Site URL: [Go Live](https://rabin92.github.io/techdegree-project4/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- Sass
+- Mobile-first Responsive Design
+
+### Tools used
+
+- Visual Studio Code
+- Git
+- GitHub
+
 ### Project Description
 
-<p>With a provided HTML and CSS, create a style guide that can act as your own personal and custom Bootstrap that you can drop into any of your projects to speed up styling, layout and development in general. </p>
+For this project, I used a CSS preprocessor Sass. I used features like variables, mixins to speed up the workflow. I then compiled Sass to CSS using the sass command.
 
-### Languages
+## Author
 
-* HTML5
-* CSS3
-* Sass
-* Media Queries
-
-### Tools
-
-* Visual Studio Code
-* Git
-
+- Website - [Rabin Gharti Magar](https://www.rabingm.dev/)
+- Frontend Mentor - [@Rabin92](https://www.frontendmentor.io/profile/Rabin92)
